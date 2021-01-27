@@ -1,0 +1,56 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <title>Databases (Firebase)</title>
+  <style>
+    .container{
+      max-width: 400px;
+    }
+    body{
+    background: rgb(238, 196, 59);
+}
+  </style>
+</head>
+<body>
+  
+  <div class="container my-5">
+    <h2>Notes</h2>
+    <ul></ul>
+    <form>
+      <label for="recipe">Add note:</label>
+      <div class="input-group">
+        <input type="text" class="form-control" id="recipe" required>
+        <div class="input-group-append">
+          <input type="submit" value="Add" class="btn btn-outline-secondary">
+        </div>
+      </div>
+    </form>
+  </div>
+
+<!-- Firebase app library-->
+<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+<!-- Firebase firestore library-->
+<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-firestore.js"></script>
+<script>
+    // Initialize Firebase
+  var firebaseConfig = {
+    // Fortæller hvilken data den skal connect til i Firebase.
+    apiKey: "AIzaSyBw28tyu9LMOsTYBC7J__cFTfiHJQURK5k",
+    authDomain: "note-app-98a93.firebaseapp.com",
+    projectId: "note-app-98a93",
+    storageBucket: "note-app-98a93.appspot.com",
+    messagingSenderId: "28800282761",
+    appId: "1:28800282761:web:93426527ea48b289cf9658",
+    measurementId: "G-EBJXNMHHE4"
+  };
+  firebase.initializeApp(firebaseConfig);
+  // reference til databasen. 
+  const db = firebase.firestore();
+</script>
+  </script>   
+  <script src="sandbox.js"></script>
+</body>
+</html>

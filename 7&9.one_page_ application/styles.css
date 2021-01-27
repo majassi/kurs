@@ -1,0 +1,47 @@
+body{
+  background: #f1ca18;
+}
+.container{
+  max-width: 400px;
+}
+input[type=text],
+input[type=text]:focus{
+  color: #fff;
+  border: 10;
+  border-color: white;
+  background: rgba(255, 255, 255, 0.2);
+  max-width: 400px;
+}
+.todos li{
+  background: #f1ca18;
+  border-color: white;
+}
+.delete{
+  cursor: pointer;
+}
+/*
+Når et element har denne her class, så skal den ikke vises og 
+det er vigtigt, at overskrive enhver anden class den har eller enhver anden style, den måtte have.
+*/
+.filtered{
+  display: none !important;
+}
+
+.text{
+  color: #f1ca18;
+}
+
+.buttons{
+  position: static;
+}
+
+.buttonOne{
+  background: #fff;
+  border-radius: 10px;
+}
+
+.buttonTwo{
+  border-radius: 10px;
+  border-color: #fff;
+  background: #f3e08e;
+}

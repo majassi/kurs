@@ -1,0 +1,127 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  <title>Todo og quiz</title>
+</head>
+<body>
+
+  <!-- Note application -->
+  <div class="buttons text-center">
+    <button onclick="todosToggle()" class="buttonOne btn text-warning">Klik her for at se din Todo liste</button>
+    <button onclick="quizToggle()" class="buttonTwo btn text-white">Klik her for at se din quiz</button>
+  </div>
+  
+  <!-- Todo liste -->
+    <div class="container" style="display: none;">
+
+    <header class="text-center text-light my-4">
+      <h1 class="mb-4">Todo Liste</h1>
+      <form class="search">
+        <input class="form-control m-auto" type="text" name="search" placeholder="Søg.." />
+      </form>
+    </header>
+
+    <ul class="list-group todos mx-auto text-light">
+      <li class="list-group-item d-flex justify-content-between align-items-center">
+        <span>Fifa 21</span>
+        <i class="far fa-trash-alt delete"></i>
+      </li>
+      <li class="list-group-item d-flex justify-content-between align-items-center">
+        <span>Playstation 5 i hvid</span>
+        <i class="far fa-trash-alt delete"></i>
+      </li>
+      <li class="list-group-item d-flex justify-content-between align-items-center">
+        <span> Ekstra controller</span>
+        <i class="far fa-trash-alt delete"></i>
+      </li>
+    </ul>
+
+    <form class="add text-center my-4">
+      <label class="text-light">Tilføj en ny todo...</label>
+      <input class="form-control m-auto" type="text" name="add" />
+    </form>
+
+  </div>
+  
+<!-- Quiz -->
+<div class="quizContainer" style="display: none;">
+<!-- top section -->
+<div class="intro py-3 bg-white text-center">
+  <div class="container">
+    <h2 class="text display-5 my-3">Lionel Messi</h2>
+  </div>
+</div>
+
+<!-- result section -->
+<div class="result py-4 d-none bg-light text-center">
+  <div class="container lead">
+    <p>Du er <span class="text-primary display-4 p-">0%</span> Lionel Messi fan</p>
+  </div>
+</div>
+
+<!-- quiz section -->
+<div class="quiz py-4 ">
+  <div class="container">
+    </h2>
+
+    <form class="quiz-form text-light">
+      <div class="my-5">
+        <p class="lead font-weight-normal">1. Hvilket nummer har Lionel Messi bag ryggen for FC Barcelona?</p>
+        <div class="form-check my-2 text-white-50">
+          <input type="radio" name="q1" value="A" checked>
+          <label class="form-check-label">Nummer 11</label>
+        </div>
+        <div class="form-check my-2 text-white-50">
+          <input type="radio" name="q1" value="B">
+          <label class="form-check-label">Nummer 10</label>
+        </div>
+      </div>
+      <div class="my-5">
+        <p class="lead font-weight-normal">2. Hvilket land er Lionel Messi fra?</p>
+        <div class="form-check my-2 text-white-50">
+          <input type="radio" name="q2" value="A" checked>
+          <label class="form-check-label">Frankrig</label>
+        </div>
+        <div class="form-check my-2 text-white-50">
+          <input type="radio" name="q2" value="B">
+          <label class="form-check-label">Argentina</label>
+        </div>
+      </div>
+      <div class="my-5">
+        <p class="lead font-weight-normal">3. Hvor mange børn har Lionel Messi?</p>
+        <div class="form-check my-2 text-white-50">
+          <input type="radio" name="q3" value="A" checked>
+          <label class="form-check-label">5</label>
+        </div>
+        <div class="form-check my-2 text-white-50">
+          <input type="radio" name="q3" value="B">
+          <label class="form-check-label">3</label>
+        </div>
+      </div>
+      <div class="my-5">
+        <p class="lead font-weight-normal">4. Hvor mange Champions league har lionel Messi vundet?</p>
+        <div class="form-check my-2 text-white-50">
+          <input type="radio" name="q4" value="A" checked>
+          <label class="form-check-label">8</label>
+        </div>
+        <div class="form-check my-2 text-white-50">
+          <input type="radio" name="q4" value="B">
+          <label class="form-check-label">4</label>
+        </div>
+      </div>
+      <div class="text-center">
+        <input type="submit" class="btn btn-light"> 
+      </div>
+    </form>
+
+  </div>
+</div>
+
+  <script src="app.js"></script>
+</body>
+</html>
